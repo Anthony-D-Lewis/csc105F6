@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #626262;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #b8b6b6;
+    color: #010101;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    padding: 10px;
+    border: 2px solid #0c0c0c;
+    margin-bottom: 15px;
+}
+
+#page-title {
+    color: #fe0707;}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    flex: 1 1 250px;
+    padding: 12px;
+    border: 2px solid #9d3119;
+    margin: 12px 0;
+}
+
+h2 {
+    color: #9d3119;
+    font-size: 30px;
+}
+
+.study-intro h2 {
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 10px;
+    border: 2px solid #9d3119;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+    body {
+        margin: 32px;
+    }
+
+    section {
+        flex: 1 1 40%;
+        padding: 24px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    section {
+        flex: 1 1 40%;
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section {
+        width: 100%;
+        padding: 16px;
+    }
+
+    section ol,
+    section ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
